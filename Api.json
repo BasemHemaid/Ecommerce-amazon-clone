@@ -1,0 +1,427 @@
+[
+     [
+        { "menColthing":[  {
+                            "id": 1,
+                            "title": "Mens Casual Slim Fit",
+                            "price": 15.99,
+                            "category": "men's clothing",
+                            "image": "../images/men's clothing/01.jpg",
+                            "rating": {
+                            "rate": 2.1,
+                            "count": 430
+                            }
+                            }
+                            ,{
+                            "id": 2,
+                            "title": "Mens Casual Premium Slim Fit T-Shirts ",
+                            "price": 22.3,
+                            "category": "men's clothing",
+                            "image": "../images/men's clothing/02.jpg",
+                            "rating": {
+                            "rate": 4.1,
+                            "count": 259
+                            }
+                            },
+                            {
+                            "id": 3,
+                            "title": "Mens Cotton Jacket",
+                            "price": 55.99,
+                            "category": "men's clothing",
+                            "image": "../images/men's clothing/03.jpg",
+                            "rating": {
+                            "rate": 4.7,
+                            "count": 500
+                            }
+                            },
+                            {
+                            "id": 4,
+                            "title": "Kangaroo Pocket Fleece Bi-Tone Hoodie With Drawstring - Grey & Black",
+                            "price":  249,
+                            "category": "men's clothing",
+                            "image": "../images/men's clothing/04.jpg",
+                            "rating": {
+                            "rate": 4.3,
+                            "count": 51
+                            }
+                            },
+                            {
+                            "id": 5,
+                            "title": "City Rep TR Training Shoes Black",
+                            "price":  500,
+                            "category": "men's clothing",
+                            "image": "../images/men's clothing/05.jpg",
+                            "rating": {
+                            "rate": 4.3,
+                            "count": 60
+                            }
+                            },
+                            {
+                            "id": 6,
+                            "title": "Zamalek Away Match Jersey 22/23 Fan",
+                            "price":  50,
+                            "category": "men's clothing",
+                            "image": "../images/men's clothing/06.jpg",
+                            "rating": {
+                            "rate": 4.7,
+                            "count": 209
+                            }
+                            }
+                          
+                        ]
+    },
+    {
+        "superMarket": [
+                            {
+                            "id": 7,
+                            "title": "Ariel Automatic Laundry Powder Detergent with Lavendar - 6.5KG",
+                            "price":  10,
+                            "category": "Super Market",
+                            "image": "../images/superMarket/01.jpg",
+                            "rating": {
+                            "rate": 4.7,
+                            "count": 207}
+
+                        },
+                            {
+                            "id": 8,
+                            "title": "BabyJoy Compressed Mini NB NB Size (1) 11 Pcs (Up to 4 Kg)",
+                            "price":  39,
+                            "category": "Super Market",
+                            "image": "../images/superMarket/02.jpg",
+                            "rating": {
+                            "rate": 4,
+                            "count": 20}
+
+                        },
+                            {
+                            "id": 9,
+                            "title": "20 Pack Grocery Shopping Basket with Handle 16.9 x 11.8 x 9.1 Inch Plastic Hand Basket Blue",
+                            "price":  200,
+                            "category": "Super Market",
+                            "image": "../images/superMarket/05.jpg",
+                            "rating": {
+                            "rate": 4.5,
+                            "count": 20}
+
+                        },
+                            {
+                            "id": 10,
+                            "title": "Mayonnaise Doy Pack 285g",
+                            "price":  9,
+                            "category": "Super Market",
+                            "image": "../images/superMarket/03.jpg",
+                            "rating": {
+                            "rate": 4.6,
+                            "count": 70}
+
+                        },
+                            {
+                            "id": 11,
+                            "title": "Mustard Sauce 1kg Single",
+                            "price":  29,
+                            "category": "Super Market",
+                            "image": "../images/superMarket/04.jpg",
+                            "rating": {
+                            "rate": 3.5,
+                            "count": 22}
+
+                        }
+    ]
+    },
+    {
+        "electronics":[
+                        {
+                            "id": 12,
+                            "title": "Beats Studio Buds - True Wireless Noise Cancelling Earbuds - Compatible with Apple & Android",
+                            "price":  200,
+                            "category": "electronics",
+                            "image": "../images/electronics/01.jpg",
+                            "rating": {
+                            "rate": 4.9,
+                            "count": 55}
+
+                        },
+                        {
+                            "id": 13,
+                            "title": "Nintendo Switch™ with Neon Blue and Neon Red Joy-Con™",
+                            "price":  300,
+                            "category": "electronics",
+                            "image": "../images/electronics/02.jpg",
+                            "rating": {
+                            "rate": 4,
+                            "count": 5}
+
+                        },
+                        {
+                            "id": 14,
+                            "title": "Apple EarPods Headphones with Lightning Connector",
+                            "price":  30,
+                            "category": "electronics",
+                            "image": "../images/electronics/03.jpg",
+                            "rating": {
+                            "rate": 4.2,
+                            "count": 5}
+                        },
+                        {
+                            "id": 15,
+                            "title": "Roku Streaming Stick 4K | Streaming Device 4K/HDR/Dolby Vision with Roku Voice Remote and TV Controls",
+                            "price":  350,
+                            "category": "electronics",
+                            "image": "../images/electronics/04.jpg",
+                            "rating": {
+                            "rate": 3.2,
+                            "count": 25}
+                        },
+                        {
+                            "id": 16,
+                            "title": "Lumens VC-B20UA USB 3.0 HD PTZ Camera with Speakerphone Kit, Equipped with a 1/2.8",
+                            "price":  310,
+                            "category": "electronics",
+                            "image": "../images/electronics/05.jpg",
+                            "rating": {
+                            "rate": 3.4,
+                            "count": 255}
+                        },
+                        {
+                            "id": 17,
+                            "title": "SAMSUNG EVO Select Micro SD-Memory-Card + Adapter, 256GB microSDXC 130MB/s Full HD",
+                            "price":  30,
+                            "category": "electronics",
+                            "image": "../images/electronics/06.jpg",
+                            "rating": {
+                            "rate": 4,
+                            "count": 55}
+                        }
+        ]
+    },
+    {
+        "personalCare":[
+                            {
+                                "id": 18,
+                                "title": "Qlwfov Back Brace and Posture Corrector for Women and Men",
+                                "price":  35,
+                                "category": "Personal Care",
+                                "image": "../images/personalCare/01.jpg",
+                                "rating": {
+                                "rate": 4,
+                                "count": 55}
+                            },
+                            {
+                                "id": 19,
+                                "title": "Dove Antiperspirant Deodorant with 48 Hour Protection",
+                                "price":  13,
+                                "category": "Personal Care",
+                                "image": "../images/personalCare/02.jpg",
+                                "rating": {
+                                "rate": 4.5,
+                                "count": 200}
+                            },
+                            {
+                                "id": 20,
+                                "title": "CeraVe Moisturizing Cream | Body and Face Moisturizer for Dry Skin",
+                                "price":  17,
+                                "category": "Personal Care",
+                                "image": "../images/personalCare/03.jpg",
+                                "rating": {
+                                "rate": 4.2,
+                                "count": 400}
+                            },
+                            {
+                                "id": 21,
+                                "title": "MicroTouch Titanium MAX Lighted Personal Trimmer",
+                                "price":  18,
+                                "category": "Personal Care",
+                                "image": "../images/personalCare/04.jpg",
+                                "rating": {
+                                "rate": 4.9,
+                                "count": 40}
+                            },
+                            {
+                                "id": 22,
+                                "title": "LANEIGE Lip Sleeping Mask: Nourish & Hydrate with Vitamin C, Antioxidants, 0.7 oz.",
+                                "price":  24,
+                                "category": "Personal Care",
+                                "image": "../images/personalCare/05.jpg",
+                                "rating": {
+                                "rate": 4,
+                                "count": 50}
+                            },
+                            {
+                                "id": 23,
+                                "title": "Snap on Smile Braces, Smile Big with Confidence Instantly,One Size Fit All.",
+                                "price":  29,
+                                "category": "Personal Care",
+                                "image": "../images/personalCare/06.jpg",
+                                "rating": {
+                                "rate": 2.9,
+                                "count": 70}
+                            }
+        ]
+    },
+    {
+        "dresses":[
+                            {
+                                "id": 24,
+                                "title": "Popilush Shaper Dress Bodycon Maxi/Mini Built in Shapewear Bra 8 in 1 Women Lounge Long/Short Slip Dresses",
+                                "price":99,
+                                "category": "Dresses",
+                                "image": "../images/dresses/01.jpg",
+                                "rating": {
+                                "rate": 4.9,
+                                "count": 80}
+                            },
+                            {
+                                "id": 25,
+                                "title": "DIRASS Women's Elegant Velvet Long Sleeve Wrap V Neck Ruched Bodycon Cocktail Party Maxi Dress",
+                                "price":62,
+                                "category": "Dresses",
+                                "image": "../images/dresses/02.jpg",
+                                "rating": {
+                                "rate": 3.9,
+                                "count": 90}
+                            },
+                            {
+                                "id": 26,
+                                "title": "BBX Lephsnt Womens Wrap V Neck Dresses for Wedding Guest Casual Pleated Long Sleeve Mini Dress",
+                                "price":52,
+                                "category": "Dresses",
+                                "image": "../images/dresses/03.jpg",
+                                "rating": {
+                                "rate": 4.5,
+                                "count": 92}
+                            },
+                            {
+                                "id": 27,
+                                "title": "PRIMODA Women's Spaghetti Strap Backless Thigh-high Slit Bodycon Maxi Long Dress Club Party Dress",
+                                "price":29,
+                                "category": "Dresses",
+                                "image": "../images/dresses/04.jpg",
+                                "rating": {
+                                "rate": 4.3,
+                                "count": 102}
+                            },
+                            {
+                                "id": 28,
+                                "title": "Floerns Women's Plus Size V Neck Sleeveless Contrast Mesh Evening Midi Dress",
+                                "price":48,
+                                "category": "Dresses",
+                                "image": "../images/dresses/05.jpg",
+                                "rating": {
+                                "rate": 4.4,
+                                "count": 12}
+                            },
+                            {
+                                "id": 29,
+                                "title": "MASCOMODA Women Boho Maxi Dress Long Sleeve V Neck Swiss Dot Smocked High Waisted Button",
+                                "price":58,
+                                "category": "Dresses",
+                                "image": "../images/dresses/06.jpg",
+                                "rating": {
+                                "rate": 4.6,
+                                "count": 15}
+                            }
+        ]
+    },
+    {
+        "fitness":[
+            {
+                "id": 30,
+                "title": "DeskCycle 2 Under Desk Bike Pedal Exerciser with Adjustable Leg - Mini Exercise Bike Desk Cycle",
+                "price":258,
+                "category": "Fitness",
+                "image": "../images/fitness/01.jpg",
+                "rating": {
+                "rate": 4.6,
+                "count": 15}
+            },
+            {
+                "id": 31,
+                "title": "Gym Solutionz Pilates Bar Kit with Resistance Bands, 3-Section Stick Squat Yoga Pilates bands-Home Workout Equipment",
+                "price":58,
+                "category": "Fitness",
+                "image": "../images/fitness/02.jpg",
+                "rating": {
+                "rate": 4.3,
+                "count": 19}
+            },
+            {
+                "id": 32,
+                "title": "Renoj Resistance Bands, Exercise Workout Bands for Women and Men",
+                "price":18,
+                "category": "Fitness",
+                "image": "../images/fitness/03.jpg",
+                "rating": {
+                "rate": 4.7,
+                "count": 35}
+            },
+            {
+                "id": 33,
+                "title": "Cubii Under Desk Elliptical Bundle, JR1 & Non-Slip Mat, Bike Pedal Exerciser with LCD Fitness Tracker Screen",
+                "price":98,
+                "category": "Fitness",
+                "image": "../images/fitness/04.jpg",
+                "rating": {
+                "rate": 3.6,
+                "count": 65}
+            },
+            {
+                "id": 34,
+                "title": "Marcy Dual Action Cross Training Recumbent Exercise Bike with Arm Exercisers",
+                "price":358,
+                "category": "Fitness",
+                "image": "../images/fitness/05.jpg",
+                "rating": {
+                "rate": 4.9,
+                "count": 18}
+            },
+            {
+                "id": 35,
+                "title": "Resistance Bands for Working Out, INNELO Multi-Weight Optional Heavy Exercise Bands for Men Women",
+                "price":88,
+                "category": "Fitness",
+                "image": "../images/fitness/06.jpg",
+                "rating": {
+                "rate": 4,
+                "count": 35}
+            }
+        ]
+    }],
+    [
+        {
+            "id": 36,
+            "title": "2X DMSO 99.9% Pharma Grade, Low Odor - Dimethyl sulfoxide Liquid (2X 3.4 Oz - 2X 100ml), High Purity, Set of Two, Heiltropfen®",
+            "price":27,
+            "image": "../images/supplies/01.jpg",
+            "rating": {
+            "rate": 4.5,
+            "count": 35}
+        },
+        {
+            "id": 37,
+            "title": " Amazon Brand - Presto! 313-Sheet Mega Roll Toilet Paper, Ultra-Soft, 6 Count (Pack of 4), 24 Family Mega Rolls = 120 regular rolls",
+            "price":29,
+            "image": "../images/supplies/02.jpg",
+            "rating": {
+            "rate": 4.3,
+            "count": 35}
+        },
+        {
+            "id": 38,
+            "title": "Pacific Blue Select Multifold Premium 2-Ply Paper Towels by GP PRO (Georgia-Pacific), White, 21000, 125 Paper Towels Per Pack, 16 Packs Per Case",
+            "price":23,
+            "image": "../images/supplies/03.jpg",
+            "rating": {
+            "rate": 4,
+            "count": 35}
+        },
+        {
+            "id": 39,
+            "title": " Kasa Smart Plug Power Strip HS300, Surge Protector with 6 Individually Controlled Smart Outlets and 3 USB Ports, Works with Alexa & Google Home, No Hub...",
+            "price":27,
+            "image": "../images/supplies/04.jpg",
+            "rating": {
+            "rate": 4.6,
+            "count": 60}
+        }
+    ]
+]
