@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="padding-left: 100px;padding-right: 100px;">
+
+    <h1>Shopping Cart</h1>
+    <hr>
+    <div class="total" style="font-weight: bold;font-size: 20px;padding: 15px;position: absolute;right: 10%;"><span
+            id="total_item"></span> <span id="total_price"></span></div>
+    <script>
+        // var total = document.querySelector(".total");
+        var total_price = document.querySelector("#total_price");
+        var total_item = document.querySelector("#total_item")
+        var purchasedItems = JSON.parse(localStorage.getItem("All_product"));
+        let myReq = new XMLHttpRequest();
+        var Data;
+        var totalPrice = 0;
+        var totalitems = 0;
+        myReq.open("Get", "/category.json", true);
+        myReq.onreadystatechange = function () {
+            if (myReq.readyState == 4 && myReq.status == 200) {
+                Data = JSON.parse(myReq.responseText)
+                for (var i = 0; i < purchasedItems.length; i++) {
+                    let DataPurchased = Data[purchasedItems[i].categoryId].filter((prod) => prod.id == purchasedItems[i].productID)
+                    if (DataPurchased) {
+                        let purchasedItem = document.createElement("div");
+                        purchasedItem.style = "display: flex;justify-content: space-around;";
+                        let purchasedImg = document.createElement("img");
+                        purchasedImg.style = "width: 20%;height: 140px;object-fit: contain;"
+                        purchasedImg.src = DataPurchased[0].image
+                        let purchaseddesc = document.createElement("div");
+                        purchaseddesc.style = "width: 50%;display: flex;flex-direction: column;"
+                        purchasedItem.appendChild(purchasedImg)
+                        purchasedItem.appendChild(purchaseddesc)
+                        var itemTitle = document.createElement("p");
+                        itemTitle.innerHTML = DataPurchased[0].title
+                        itemTitle.style = "font-size: 20px;color: grey;"
+                        let itemQty = document.createElement("span");
+                        itemQty.innerHTML = `Qty : ${purchasedItems[i].Quantity}`
+                        itemQty.style = "background: #e7e7e7;padding: 5px;width: 50px;border-radius: 5px;"
+                        let itemprice = document.createElement("span");
+                        itemprice.innerHTML = `Price : $ ${purchasedItems[i].product_price}`
+                        itemprice.style = "font-weight: bolder;font-size: 18px;margin-top: 10px;"
+                        purchaseddesc.appendChild(itemTitle);
+                        purchaseddesc.appendChild(itemQty);
+                        purchaseddesc.appendChild(itemprice);
+                        let deleteItem = document.createElement("span");
+                       deleteItem.setAttribute("id",DataPurchased[0].id)
+                      // console.log(DataPurchased[0].id);
+                        deleteItem.innerHTML = "Remove"
+                        deleteItem.style = "width:10%;align-self:center;cursor: pointer;border-radius: 9px;font-weight: bolder;color: white;height: 50px;background: red;align-items: center;display: flex;justify-content: center;"
+                        purchasedItem.appendChild(deleteItem)
+                        document.body.appendChild(purchasedItem)
+                        let hr = document.createElement("hr")
+                        document.body.appendChild(hr)
+
+
+                        deleteItem.onclick = function (eve) {
+                           // console.log(eve.target.id);
+                            var item_remove = eve.target.id;
+                            for (var j = 0; j< purchasedItems.length; j++) {
+                                    console.log(item_remove)
+
+                                if (item_remove == purchasedItems[j].productID) {
+                                                               
+                                    total_item.innerHTML = `Subtotal(${purchasedItems.length - 1} items) : $`;
+                                    total_price.innerHTML = total_price.innerHTML - purchasedItems[j].totalPrice;
+                                    purchasedItems.splice(j,1)
+                                    purchasedItem.remove()
+                                    hr.remove();
+
+                                    console.log(purchasedItems.length);
+                                    console.log(purchasedItems);
+
+                                    if (purchasedItems.length == 0) {
+                                        localStorage.removeItem("All_product")
+                                        localStorage.setItem("count", 0)
+                                       total.innerHTML = `Subtotal(${purchasedItems.length} items) : $${totalPrice = 0}`
+                                        total_item.innerHTML = `Subtotal(${purchasedItems.length } items) : $`;
+                                        total_price.innerHTML = 0;
+
+                                    } else {
+                                        localStorage.setItem("All_product", JSON.stringify(purchasedItems));
+                                        localStorage.setItem("count", JSON.parse(localStorage.getItem("All_product")).length)
+
+                                    }
+
+                                }
+
+                                
+
+
+
+
+                            }
+
+                        }
+
+                        total = document.querySelector(".total");
+                        total_item.innerHTML = `Subtotal(${purchasedItems.length} items) : $`;
+                        total_price.innerHTML = `${totalPrice += parseFloat(purchasedItems[i].totalPrice)}`;
+                        //  total.innerHTML = `Subtotal(${purchasedItems.length} items) : $${totalPrice += parseFloat(purchasedItems[i].totalPrice)}`
+                        document.body.append(total)
+
+                    }
+                }
+            }
+        }
+        myReq.send()
+    </script>
+</body>
+
+</html>
